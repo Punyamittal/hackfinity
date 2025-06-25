@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1a237e; /* Deep trust foundation for technical credibility - indigo-900 */
+  --color-primary-50: #e8eaf6; /* Light indigo (50-level shade) - indigo-50 */
+  --color-primary-100: #c5cae9; /* Light indigo (100-level shade) - indigo-100 */
+  --color-primary-200: #9fa8da; /* Medium light indigo (200-level shade) - indigo-200 */
+  --color-primary-300: #7986cb; /* Medium indigo (300-level shade) - indigo-300 */
+  --color-primary-400: #5c6bc0; /* Medium indigo (400-level shade) - indigo-400 */
+  --color-primary-500: #3f51b5; /* Medium indigo (500-level shade) - indigo-500 */
+  --color-primary-600: #3949ab; /* Medium dark indigo (600-level shade) - indigo-600 */
+  --color-primary-700: #303f9f; /* Dark indigo (700-level shade) - indigo-700 */
+  --color-primary-800: #283593; /* Darker indigo (800-level shade) - indigo-800 */
+  --color-primary-900: #1a237e; /* Darkest indigo (900-level shade) - indigo-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #2196f3; /* Innovation energy for interactive elements - blue-500 */
+  --color-secondary-50: #e3f2fd; /* Light blue (50-level shade) - blue-50 */
+  --color-secondary-100: #bbdefb; /* Light blue (100-level shade) - blue-100 */
+  --color-secondary-200: #90caf9; /* Medium light blue (200-level shade) - blue-200 */
+  --color-secondary-300: #64b5f6; /* Medium blue (300-level shade) - blue-300 */
+  --color-secondary-400: #42a5f5; /* Medium blue (400-level shade) - blue-400 */
+  --color-secondary-500: #2196f3; /* Medium blue (500-level shade) - blue-500 */
+  --color-secondary-600: #1e88e5; /* Medium dark blue (600-level shade) - blue-600 */
+  --color-secondary-700: #1976d2; /* Dark blue (700-level shade) - blue-700 */
+  --color-secondary-800: #1565c0; /* Darker blue (800-level shade) - blue-800 */
+  --color-secondary-900: #0d47a1; /* Darkest blue (900-level shade) - blue-900 */
+
+  /* Accent Colors */
+  --color-accent: #00bcd4; /* Breakthrough moments and success highlights - cyan-500 */
+  --color-accent-50: #e0f7fa; /* Light cyan (50-level shade) - cyan-50 */
+  --color-accent-100: #b2ebf2; /* Light cyan (100-level shade) - cyan-100 */
+  --color-accent-200: #80deea; /* Medium light cyan (200-level shade) - cyan-200 */
+  --color-accent-300: #4dd0e1; /* Medium cyan (300-level shade) - cyan-300 */
+  --color-accent-400: #26c6da; /* Medium cyan (400-level shade) - cyan-400 */
+  --color-accent-500: #00bcd4; /* Medium cyan (500-level shade) - cyan-500 */
+  --color-accent-600: #00acc1; /* Medium dark cyan (600-level shade) - cyan-600 */
+  --color-accent-700: #0097a7; /* Dark cyan (700-level shade) - cyan-700 */
+  --color-accent-800: #00838f; /* Darker cyan (800-level shade) - cyan-800 */
+  --color-accent-900: #006064; /* Darkest cyan (900-level shade) - cyan-900 */
+
+  /* Background Colors */
+  --color-background: #fafafa; /* Clean canvas for code readability - gray-50 */
+  --color-surface: #ffffff; /* Content containers with subtle depth - white */
+
+  /* Text Colors */
+  --color-text-primary: #1a1a1a; /* Extended reading without eye strain - gray-900 */
+  --color-text-secondary: #666666; /* Clear hierarchy and supporting information - gray-600 */
+
+  /* Status Colors */
+  --color-success: #4caf50; /* Achievement celebration and positive feedback - green-500 */
+  --color-success-50: #e8f5e8; /* Light green (50-level shade) - green-50 */
+  --color-success-100: #c8e6c9; /* Light green (100-level shade) - green-100 */
+  --color-success-600: #43a047; /* Medium dark green (600-level shade) - green-600 */
+  --color-success-700: #388e3c; /* Dark green (700-level shade) - green-700 */
+
+  --color-warning: #ff9800; /* Deadline urgency without panic - orange-500 */
+  --color-warning-50: #fff3e0; /* Light orange (50-level shade) - orange-50 */
+  --color-warning-100: #ffe0b2; /* Light orange (100-level shade) - orange-100 */
+  --color-warning-600: #fb8c00; /* Medium dark orange (600-level shade) - orange-600 */
+  --color-warning-700: #f57c00; /* Dark orange (700-level shade) - orange-700 */
+
+  --color-error: #f44336; /* Helpful problem identification and guidance - red-500 */
+  --color-error-50: #ffebee; /* Light red (50-level shade) - red-50 */
+  --color-error-100: #ffcdd2; /* Light red (100-level shade) - red-100 */
+  --color-error-600: #e53935; /* Medium dark red (600-level shade) - red-600 */
+  --color-error-700: #d32f2f; /* Dark red (700-level shade) - red-700 */
+
+  /* Conversion Colors */
+  --color-conversion: #ff9800; /* Vibrant orange for maximum conversion impact - orange-500 */
+  --color-conversion-hover: #f57c00; /* Darker orange for hover states - orange-700 */
+}
+
+@layer base {
+*  {
+    
+  }
+  
+  body {
+    @apply bg-background text-text-primary font-body;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+
+  code, pre {
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary-700 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .btn-conversion {
+    @apply bg-conversion text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-conversion-hover hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .glassmorphism {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+  }
+
+  .shadow-depth {
+    box-shadow: 
+      0 2px 4px rgba(26, 35, 126, 0.1),
+      0 8px 16px rgba(26, 35, 126, 0.1);
+  }
+
+  .shadow-floating {
+    box-shadow: 0 4px 20px rgba(33, 150, 243, 0.3);
+  }
+
+  .animation-smooth {
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animation-micro {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
