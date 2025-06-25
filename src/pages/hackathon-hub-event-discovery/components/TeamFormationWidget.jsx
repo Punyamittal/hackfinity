@@ -210,7 +210,8 @@ Excited to work on AI/ML challenges and help teams make data-driven decisions.`,
                         onClick={() => handleSkillToggle(skill)}
                         className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                           selectedSkills.includes(skill)
-                            ? 'bg-primary text-white' :'bg-primary-50 text-primary hover:bg-primary-100'
+                            ? 'bg-primary text-white'
+                            : 'bg-primary-50 text-primary hover:bg-primary-100'
                         }`}
                       >
                         {skill}
@@ -362,7 +363,8 @@ Excited to work on AI/ML challenges and help teams make data-driven decisions.`,
                         onClick={() => handleSkillToggle(skill)}
                         className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                           selectedSkills.includes(skill)
-                            ? 'bg-primary text-white' :'bg-primary-50 text-primary hover:bg-primary-100'
+                            ? 'bg-primary text-white'
+                            : 'bg-primary-50 text-primary hover:bg-primary-100'
                         }`}
                       >
                         {skill}
